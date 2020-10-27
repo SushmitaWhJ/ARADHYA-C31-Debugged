@@ -12,11 +12,13 @@ function setup() {
     engine = Engine.create();
     world = engine.world;
     ground = new Ground(200,800,800,20);
-
+    
+  //CREATING THE DIVISIONS USING FOR LOOP
     for (var k = 0; k <=400;k = k+80) {
       divisions.push(new Division(k ,height- divisionHeight/2,10,divisionHeight));
       }
 
+  //CREATING PLINKOS USING FOR LOOP
     for (var a = 20; a <=width; a=a+50) // varying x value with constant y value
     {
     
